@@ -15,6 +15,7 @@ Code for this project is structured as follows:
 
 * `notebooks` contains example notebooks of pipelines
 * `src` contains code to support these pipelines 
+* `models` stores models that have been built. Should not be sent to github. 
 
 ## Requirements
 
