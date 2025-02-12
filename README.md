@@ -7,7 +7,7 @@ This code supports some basic NLP pipelines to test how well they work in differ
 
 ## Usage
 
-* TODO
+* Notebooks should be able to run individually. If missing, place a `config.py` file into your `src` folder that contains a `data_path` variable, as well as any required variables to import data into the Azure storage blob (a `blob_service_sas_url`). 
 
 ## Structure
 
@@ -19,7 +19,8 @@ Code for this project is structured as follows:
 
 ## Requirements
 
-* This project is built in python. Use `pip install requirements.txt` to get all the required packages. 
+* This project is built in python. Use `pip install -r requirements.txt` to get all the required packages. I am not currently focused on setting up tidy virtual environments, but this should at least get any missing packages installed into the VMs. 
+* To update the `requirements.txt` file, make sure you have pipreqs installed and then run `pipreqs ./ --scan-notebooks --force` from the command line. This will make sure that all utilized packages are included in the requirements file. 
     
 ## Project Status
 
