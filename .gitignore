@@ -13,3 +13,7 @@ ipython_config.py
 
 # PyCharm
 .idea/
+
+
+# config files
+*config.py
