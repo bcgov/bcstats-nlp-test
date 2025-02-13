@@ -7,13 +7,20 @@ This code supports some basic NLP pipelines to test how well they work in differ
 
 ## Usage
 
-* Notebooks should be able to run individually. If missing, place a `config.py` file into your `src` folder that contains a `data_path` variable, as well as any required variables to import data into the Azure storage blob (a `blob_service_sas_url`). 
+* Notebooks should be able to run individually. 
+* If missing, place a `config.py` file into your `src` folder that contains a `data_path` variable.  
+* To run `local_to_blob`:
+    * You must make a SAS for the associated storage account and data container in Azure. Copy the `blob_service_sas_url` into your `config.py` file after creating the SAS. Note that when the SAS expires this will no longer work - a new SAS and url will be required. 
+    * You will also need the name of the `container` you are trying to access. Save this in your `config.py` file. 
+* To run `blob_to_vm`:
+    * You can use the `connection_string` associated with one of the access keys. Save the connection string into your `config.py` file. Note that as keys get rotated, this access will need updating as well. 
+    * You will also need the name of the `container`, as well as the storage `account` you are trying to access. Save this in your `config.py` file. 
 
 ## Structure
 
 Code for this project is structured as follows:
 
-* `notebooks` contains example notebooks of pipelines
+* `notebooks` contains example notebooks of pipelines. It also contains two notebooks for pulling data into a DSVM (one for loading it from your local->Azure blob, and one for Azure blob -> DSVM). 
 * `src` contains code to support these pipelines 
 * `models` stores models that have been built. Should not be sent to github. 
 
