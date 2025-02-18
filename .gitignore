@@ -17,3 +17,7 @@ ipython_config.py
 
 # config files
 *config.py
+
+# README previews
+*.html
+README_files/
