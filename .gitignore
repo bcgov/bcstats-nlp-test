@@ -21,3 +21,6 @@ ipython_config.py
 # README previews
 *.html
 README_files/
+
+# Data Files
+data/
