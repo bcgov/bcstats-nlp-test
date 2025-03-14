@@ -3,7 +3,7 @@ from datasets import Dataset
 
 # convert to a multi labeled dataset for use with huggingface
 def get_labels_list(row):
-    out = [row['data_scientist'], row['data_engineer'], row['data_analyst'], row['ml_engineer'], row['other']]
+    out = list(row.values[1:])
     # make sure everything is a float
     out = [float(x) for x in out]
     return out

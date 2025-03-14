@@ -49,7 +49,7 @@ def classify_batch_llm(batch, classifier, labels, threshold, suffix='_llm'):
     outputs = classifier(batch['response'], labels, multi_label=True, truncation=True)
     
     # note that the labels fed into the classifier are the words - need to get the lower cased version here for matching 
-    labels_llm = [x.lower().replace(' ','_')+suffix for x in labels] # to differentiate from the actual labels 
+    labels_llm = [x.lower().replace(' ','_').replace('/','_').replace(':','_')+suffix for x in labels] # to differentiate from the actual labels 
     batch_results = {label: [] for label in labels_llm}
 
     # loop through the batch 
