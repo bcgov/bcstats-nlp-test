@@ -50,7 +50,7 @@ This project is currently in development and experimental.
 
 ## Getting Help or Reporting an Issue
 
-To report bugs/issues/feature requests, please file an [issue](https://github.com/bcgov/basic-nlp-testing/issues/).
+To report bugs/issues/feature requests, please file an [issue](https://github.com/bcgov/bcstats-nlp-test/issues).
 
 ## How to Contribute
 
