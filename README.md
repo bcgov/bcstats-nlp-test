@@ -1,10 +1,13 @@
+[![Lifecycle:Dormant](https://img.shields.io/badge/Lifecycle-Dormant-ff7f2a)](<Redirect-URL>)
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 # basic-nlp-testing
 
 Space to test some basic NLP models and their speeds on various compute configurations.
 
 ## Overview
 
-This code supports some basic NLP pipelines to test how well they work in different compute configurations.
+This code supports some basic NLP pipelines to test how well they work in different compute configurations within the Azure landing zone. This is an experimental repository, used to hold exploratory code as we develop our understanding of the tools available to us within Azure. 
 
 ## Usage
 
@@ -46,7 +49,7 @@ Code for this project is structured as follows:
 
 ## Project Status
 
-This project is currently in development and experimental.
+This project has reached its conclusion, although further work and exploration may be restarted in the future. 
 
 ## Getting Help or Reporting an Issue
 
