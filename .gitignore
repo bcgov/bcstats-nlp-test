@@ -24,6 +24,7 @@ README_files/
 
 # Data Files
 data/
+out/
 
 # http requests
 *.http
